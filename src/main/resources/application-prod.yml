@@ -1,0 +1,43 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/ebjiaoxue?useUnicode=true&characterEncoding=utf-8&useSSL=false&useTimezone=true&serverTimezone=GMT%2B8
+    username: root
+    password: 122333gsq
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+springfox:
+  documentation:
+    enabled: true
+
+#zip:
+#  path: E:/zip/
+#unzip:
+#  path: E:/unzip/
+#img:
+#  path: E:/img/
+#ossimg:
+#  path: E:/erbaojiaoxue/
+#video:
+#  frame:
+#    path: E:/video/img/
+
+file:
+  zip-path: zip/
+  unzip-path: unzip/
+  img-path: img/
+  ossimg-path: erbaojiaoxue/
+  video-frame-path: video/img/
+  video-path: video/
+  static-path: /E:/
+
+
+
+#file:
+#  zip-path: zip/
+#  unzip-path: unzip/
+#  img-path: img/
+#  ossimg-path: ossimg/
+#  video-frame-path: video/img/
+#  video-path: video/
+#  static-path: /home/dnserv/prod/erbaod/nginx/html/static/

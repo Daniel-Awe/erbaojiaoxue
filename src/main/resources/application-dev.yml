@@ -1,0 +1,46 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://127.0.0.1:3306/erbaojiaoxue?useUnicode=true&characterEncoding=utf-8&useSSL=false&useTimezone=true&serverTimezone=GMT%2B8
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+springfox:
+  documentation:
+    enabled: true
+#
+#zip:
+#  path: /home/dnserv/prod/erbaod/zip/
+#unzip:
+#  path: /home/dnserv/prod/erbaod/unzip/
+#img:
+#  path: /home/dnserv/prod/erbaod/img/
+#ossimg:
+#  path: /home/dnserv/prod/erbaod/ossimg/
+#video:
+#  frame:
+#    path: /home/dnserv/prod/erbaod/video/img/
+
+
+#公司服务器地址
+file:
+  zip-path: zip/
+  unzip-path: unzip/
+  img-path: img/
+  ossimg-path: ossimg/
+  video-frame-path: video/img/
+  video-path: video/
+  static-path: C:/Users/Daniel Awe/teaching-system/static
+#    /mydata/nginxliwenxuan/html/static
+##huaweiyun服务器地址
+#file:
+#  zip-path: /erbaod/zip/
+#  unzip-path: /erbaod/unzip/
+#  img-path: /erbaod/video/img/
+#  ossimg-path: /erbaod/ossimg/
+#  video-frame-path: /erbaod/img/

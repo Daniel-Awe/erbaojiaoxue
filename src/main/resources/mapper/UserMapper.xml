@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.zju.temp.mapper.UserMapper">
+
+    <select id="getUsersByUsername" resultType="cn.edu.zju.temp.entity.User">
+        select * from user
+        where deleted=0
+        and name like '%' || #{name} || '%';
+    </select>
+    <select id="OrderAsc" resultType="cn.edu.zju.temp.entity.User">
+        select * from `user` order by #{orderUo.column} ASC limit #{limit} offset #{rows}
+    </select>
+    <select id="orderDesc" resultType="cn.edu.zju.temp.entity.User">
+        select * from `user` order by id DESC limit #{limit} offset #{rows}
+    </select>
+</mapper>
